@@ -1,0 +1,36 @@
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script src="jquery-sticky-nav.js"></script>
+<style>
+	#branding{
+		height: 100px;
+	}
+	ul li{ float: left; margin-right: 20px;}
+</style>
+
+
+<div id="branding">
+	THE WEB IS A SYSTEM. WE CRAFT IT.
+</div>
+
+<div id="nav">
+
+	<ul>
+		<li><a href="#">First Item</a></li>
+		<li><a href="#">Second Item</a></li>
+		<li><a href="#">Third Item</a></li>
+	</ul>
+
+</div>
+
+<div style="height: 2000px"></div>
+
+<script>
+	$(function(){
+		$('#nav').stickyNav({
+		  message: 'hi',
+		  callback: function() {
+		    alert('bye');
+		  }
+		});
+	})
+</script>
